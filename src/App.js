@@ -34,17 +34,17 @@ function App() {
           </p>
           <br/>
           <div className="links-row">
-          <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/releases.">
+          <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/releases">
               <span uk-icon="icon: git-branch; ratio: 1" className="margin-icons"/>
-              v0.1.0
+              v0.1.0-alpha.1
             </a>
             <a className="row-icons" href="https://www.reddit.com/r/kimitzu/">
               <span uk-icon="icon: reddit; ratio: 1" className="margin-icons"/>
-              disscussions
+              Discussions
             </a>
             <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/issues">
               <span uk-icon="icon: github; ratio: 1" className="margin-icons"/>
-              report
+              Report
             </a>
           </div>
       </div>
