@@ -4,51 +4,30 @@ import "./App.css";
 
 function App() {
   return (
-<div className="main-content-container">
-  <nav className="uk-navbar-container white-bg uk-padding-small uk-padding-remove-bottom" data-uk-navbar>
-      <div className="uk-navbar-left">
-      <img src="/logo-icon.png" alt="Smiley face" width="50" className="uk-margin-left"/>
-      <img src="/logoWhite.png" alt="Smiley face" width="100"/>
+  <div className="main-content-container">
+    <div className="first-section-cont">
+    <img src="logo-icon.png" alt="kimitzu logo" className="main-logo"/>
+    <img src="logoWhite.png" alt="kimitzu logo name" className="main-logo-name"/>
+    <p className="sub-title">A free market for services</p>
+    <div className="buttons-row-start">
+      <a className="blue-round-button">DEMO</a>
+      <a className="outlined-button">GITHUB</a>
+    </div>
+    <div className="links-row">
+        <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/releases">
+          <span uk-icon="icon: git-branch; ratio: 1" className="margin-icons"/>
+          releases
+        </a>
+        <a className="row-icons" href="https://www.reddit.com/r/kimitzu/">
+            <span uk-icon="icon: reddit; ratio: 1" className="margin-icons"/>
+            r/kimitzu
+        </a>
+        <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/issues">
+          <span uk-icon="icon: github; ratio: 1" className="margin-icons"/>
+          contribute
+        </a>
       </div>
-  </nav>
-  <div className="uk-section uk-primary">
-      <div className="uk-container main-content-portal">
-          <img src="/logo-icon.png" alt="Smiley face" width="150"/>
-          <h3 className="uk-text-primary bolded-text">A free market for services.</h3>
-          <div className="get-started-row">
-            <a className="round-btn" href="https://test.kimitzu.ch/#/">DEMO</a>
-            <a className="round-btn-outline" href="https://github.com/kimitzu">GITHUB</a>
-          </div>
-          <p><span className="uk-text-emphasis uk-text-lead size-down-text">What's new?</span><br/>
-          Kimitzu is built on top of OpenBazaar with extra sprinkles: <br/>
-          - Fully decentralised and uncensored listings<br/>
-          - Advanced search and filters<br />
-          &nbsp; - Location-based search <br />
-          &nbsp; - Profile filtering <br />
-          &nbsp; - Occupation search based on ISCO-08 <br/>
-          - Improved caching capabilities <br/>
-          - Competency matrix for occupations <br/>
-          - Ratings <br/>
-          &nbsp; - Two-way Ratings (Service Provider and Buyer) <br/>
-          &nbsp; - Immutable, Decentralized Ratings <br/>
-          </p>
-          <br/>
-          <div className="links-row">
-          <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/releases">
-              <span uk-icon="icon: git-branch; ratio: 1" className="margin-icons"/>
-              v0.1.0-alpha.1
-            </a>
-            <a className="row-icons" href="https://www.reddit.com/r/kimitzu/">
-              <span uk-icon="icon: reddit; ratio: 1" className="margin-icons"/>
-              Discussions
-            </a>
-            <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/issues">
-              <span uk-icon="icon: github; ratio: 1" className="margin-icons"/>
-              Report
-            </a>
-          </div>
-      </div>
-  </div>
+    </div>
   </div>
   );
 }
