@@ -6,6 +6,11 @@
     font-family: SansProBold;
     src: url(Source_Sans_Pro/SourceSansPro-Bold.ttf);
 }
+@font-face {
+    font-family: Leelawadb;
+    src: url(Leelawad/leelawdb.ttf);
+}
+
 
 :root {
     --main-color: #0099FF;
@@ -22,57 +27,147 @@
     height: 100vh;
 }
 .main-logo {
-    height: 35vh;
-}
-.main-logo-name {
-    height: 20vh;
+    height: 38vmin;
 }
 .sub-title {
     font-family: SansProBold;
     color: var(--main-color);
-    font-size: 4.5vh;
+    font-size: 5.8vmin;
     margin: 0;
 }
 .buttons-row-start {
     display: flex;
     align-items: center;
     justify-content:space-between;
-    width: 20vw;
+    width: 31vw;
     margin-top: 2vh;
 }
 .blue-round-button {
     padding: 0.5vw 1vw 0.5vw 1vw;
-    border: 1px solid var(--main-color);
+    border: 0.2vh solid var(--main-color);
     background-color: var(--main-color);
     color: white;
-    width: 35%;
+    width: 32%;
     text-align: center;
     border-radius: 1.5rem;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 .outlined-button {
     padding: 0.5vw 1vw 0.5vw 1vw;
-    border: 1px solid var(--main-color);
+    border: 0.2vh solid var(--main-color);
     color: var(--main-color);
-    width: 35%;
+    width: 20%;
     text-align: center;
     border-radius: 1.5rem;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 .links-row {
     display: flex;
     flex-direction: row;
-    width: 25vw;
+    width: 25vmax;
     justify-content: space-between;
-    margin-top: 2.5vh;
+    margin-top: 2.5vmax;
 }
 .row-icons {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1vw;
+    font-size: 1vmax;
 }
 .margin-icons {
     margin-right: 1vw;
-    font-size: 1vw;
+    height: 3vh;
 }
+.aligned-download-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.download-arrow {
+    width: 1.1vw;
+    margin-left: 1vw
+}
+.word-logo {
+    font-family: Leelawadb;
+    font-size: 10.2vmax;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    line-height: 20vmin;
+    margin-top: 1vw;
+    color: var(--main-color);
+}
+.background-wave-logo {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+}
+.background-wave-logo-small {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .links-row {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        justify-content: space-between;
+        margin-top: 6vmax;
+    }
+    .row-icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vh;
+    }
+    .margin-icons {
+        margin-right: 1.5vh;
+        height: 3vh;
+    }
+    .buttons-row-start {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        width: 90vw;
+        margin-top: 6vh;
+    }
+    .blue-round-button {
+        padding: 0.5vw 1vw 0.5vw 1vw;
+        border: 0.2vh solid var(--main-color);
+        background-color: var(--main-color);
+        color: white;
+        width: 32%;
+        text-align: center;
+        border-radius: 1.5rem;
+        font-size: 1vw;
+        display: none;
+    }
+    .outlined-button {
+        padding: 0.5vw 1vw 0.5vw 1vw;
+        border: 0.2vh solid var(--main-color);
+        color: var(--main-color);
+        width: 45%;
+        text-align: center;
+        border-radius: 1.5rem;
+        font-size: 6vw;
+    }
+    .colored-small {
+        background-color: var(--main-color);
+        color: white
+    }
+    .main-logo {
+        height: 60vmin;
+        margin-top: -5vh;
+    }
+    .background-wave-logo {
+        display: none;
+    }
+    .background-wave-logo-small {
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        z-index: -1;
+    }
+}
+  
