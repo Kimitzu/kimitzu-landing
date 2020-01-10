@@ -18,8 +18,24 @@ function App() {
           <img src="Download-Arrow.svg" alt="download-arrow" className="download-arrow"/>
           </div>
         </a>
-        <a className="outlined-button colored-small">DEMO</a>
-        <a className="outlined-button">GITHUB</a>
+        <div data-uk-dropdown="mode: click">
+          <div className="row-download-icons">
+            <a className="icon-container-download" href="#">
+              <img src="windows.svg" alt="download-arrow" className="download-os"/>
+              Windows
+            </a>
+            <a className="icon-container-download middle-download-logo" href="#">
+              <img src="Apple.svg" alt="download-arrow" className="download-os"/>
+              Mac
+            </a>
+            <a className="icon-container-download" href="#">
+              <img src="linux.svg" alt="download-arrow" className="download-os"/>
+              linux
+            </a>
+          </div>
+        </div>
+        <a className="outlined-button colored-small" href="https://test.kimitzu.ch/">DEMO</a>
+        <a className="outlined-button" href="https://github.com/kimitzu">GITHUB</a>
       </div>
       <div className="links-row">
         <a className="row-icons" href="https://github.com/kimitzu/kimitzu-client/releases">
@@ -116,7 +132,50 @@ function App() {
       <img src="spotlight-2.png" alt="version-logo" className="spotlight-one"/>
     </div>
     <div className="third-section-cont">
-      <h2 className="title-bold">How is Kimitzu related to OpenBazaar?</h2>
+      <div>
+      <p className="title-bold">How is Kimitzu related to OpenBazaar?</p>
+      <p>
+        Kimitzu is built on top of OpenBazaar so, behind the scenes, Kimitzu uses that same payment system, IPFS listings, etc as the OpenBazaar app.
+      </p>
+      <p>
+        However, Kimitzu adds adds an additional layer to provide services not currently offered by OpenBazaar:
+      </p>
+      <ul className="ul-padding">
+        <li>
+          OpenBazaar is focused on both goods and services; Kimitzu is focused only on service listings.
+        </li>
+        <li>
+          Openbazaar depends on third parties to provide search. Kimitzu has a built-in search engine that a provides:
+          <ul className="ul-padding-inner">
+            <li>Location-based search</li>
+            <li>Structured search by occupation (based on <a className="text-underline" href="https://www.ilo.org/public/english/bureau/stat/isco/isco08/index.htm">ISCO-08</a>)</li>
+            <li>Structured search filters based on ratings, price, physical traits, and social traits</li>
+          </ul>
+        </li>
+        <li>
+          Detailed competency matrix for software developers (other professions to be added later)
+        </li>
+        <li>
+          Openbazaar only provides ratings for vendors, and can be deleted or modified by a vendor. Kimitzu ratings are immutable, and allow both buyer and seller to rate each other.
+        </li>
+        <li>
+          Openbazaar has an Android app. Kimitzu doesn't yet support the Android platform.
+        </li>
+      </ul>
+      <p>Explore the initial alpha release with us on the Testnet (v0.1.0-alpha)!</p>
+      <p>
+        Download the client for your operating system at <a className="text-underline" href="https://github.com/kimitzu/kimitzu-client/releases">https://github.com/kimitzu/kimitzu-client/releases.</a> Note that this is alpha software, so please expect bugs and other quirks. Also, by default, the app only operates on the OpenBazaar testnet at this time, so any store you create will only appear on the OpenBazaar testnet, and transactions won't use real money.
+      </p>
+      <p>
+        Or <a className="text-underline" href="https://test.kimitzu.ch/">play with our test instance</a>.
+      </p>
+      <p>
+        Report bugs, suggest, or contribute at <a className="text-underline" href="https://github.com/kimitzu/kimitzu-client/issues">https://github.com/kimitzu/kimitzu-client/issues</a>.
+      </p>
+      <p>
+        Join our community, head over to <a className="text-underline" href="https://reddit.com/r/kimitzu.">https://reddit.com/r/kimitzu</a>.
+      </p>
+      </div>
     </div>
   </div>
   );

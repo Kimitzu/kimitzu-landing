@@ -14,7 +14,9 @@
 p {
     margin: 1.5vw;
 }
-
+ul {
+    margin: 0;
+}
 :root {
     --main-color: #0099FF;
 }
@@ -42,9 +44,12 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     padding-left: 5vmin;
     padding-right: 5vmin;
+    flex-direction: column;
+    color: var(--main-color);
+    font-size: 1.2vw;
+    padding-top: 2vw;
 }
 .main-logo {
     height: 38vmin;
@@ -166,6 +171,35 @@ p {
 .title-bold {
     color: var(--main-color);
     font-family: SansProBold;
+    text-align: center;
+    font-size: 2vw;
+}
+.ul-padding {
+    padding: 0 4vw 0 4vw;
+}
+.ul-padding-inner{
+    padding: 0 2vw 0 2vw;
+}
+.text-underline {
+    text-decoration: underline;
+}
+.row-download-icons {
+    display: flex;
+}
+.icon-container-download {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--main-color);
+}
+.download-os {
+    width: 1.5vw;
+    margin-bottom: 0.5vw
+}
+.middle-download-logo {
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
 }
 @media only screen and (max-width: 600px) {
     .links-row {
@@ -255,6 +289,15 @@ p {
         height: 50vh;
         position: relative;
         background-color: var(--main-color);
+    }
+    .third-section-cont {
+        font-size: 4vw;
+        padding-top: 2vw;
+        padding-bottom: 10vw;
+    }
+    .title-bold {
+        font-size: 7vw;
+        margin-bottom: 4vw;
     }
 }
   
