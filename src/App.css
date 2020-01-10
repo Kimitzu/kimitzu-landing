@@ -11,6 +11,9 @@
     src: url(Leelawad/leelawdb.ttf);
 }
 
+p {
+    margin: 1.5vw;
+}
 
 :root {
     --main-color: #0099FF;
@@ -19,12 +22,21 @@
 .main-content-container {
 
 }
+
 .first-section-cont {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     height: 100vh;
+}
+.second-section-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    height: 100vh;
+    background-color: var(--main-color);
 }
 .main-logo {
     height: 38vmin;
@@ -106,6 +118,40 @@
 .background-wave-logo-small {
     display: none;
 }
+.sec-left-section {
+    flex: 1;
+    color: white;
+    font-size: 1.2vw;
+    padding-left: 5vmin;
+    padding-right: 5vmin;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: SansProRegular;
+    
+}
+.sec-right-section {
+    flex: 1;
+    height: 100vh;
+    position: relative;
+}
+.list-icon {
+    display: flex;
+    align-items: center;
+}
+.list-icons-svg {
+    margin-right: 1vw;
+    height: 4vh;
+}
+.spotlight-one {
+    position: absolute;
+    bottom: 0;
+    background-color: var(--main-color);
+}
+.spotlight-one-small {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     .links-row {
@@ -169,6 +215,26 @@
         width: 100vw;
         z-index: -1;
         display: block;
+    }
+    .sec-right-section {
+        display: none;
+    }
+    .sec-left-section {
+        font-size: 4vw;
+        padding-left: 2vmin;
+        padding-right: 3vmin;
+        justify-content: space-evenly;
+        font-family: SansProRegular;
+    }
+    .list-icons-svg {
+        margin-right: 2vw;
+        height: 4vh;
+    }
+    .spotlight-one-small {
+        display: block;
+        height: 40vh;
+        position: relative;
+        background-color: var(--main-color);
     }
 }
   
