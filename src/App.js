@@ -71,6 +71,50 @@ function App() {
     <div className="spotlight-one-small">
       <img src="Kimitzu-spotlight.png" alt="version-logo" className="spotlight-one"/>
     </div>
+    <div className="second-section-cont">
+        <div className="sec-right-section">
+          <img src="spotlight-2.png" alt="version-logo" className="spotlight-one"/>
+        </div>
+        <div className="sec-left-section">
+          <p>
+            The Kimitzu project also aspires to treat our users, developers, and other community members well at all times. For us, that means:
+          </p>
+          <p className="list-icon">
+            <img src="Privacy.svg" alt="version-logo" className="list-icons-svg"/>
+            Strong security
+          </p>
+          <p className="list-icon">
+            <img src="First.svg" alt="version-logo" className="list-icons-svg"/>
+            Beautiful UI
+          </p>
+          <p className="list-icon">
+            <img src="Freedom.svg" alt="version-logo" className="list-icons-svg"/>
+            Open source license
+          </p>
+          <p className="list-icon">
+            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            Meritocratic reward / governance structure
+          </p>
+          <p className="list-icon">
+            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            Decentralized control
+          </p>
+          <p className="list-icon">
+            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            No “dark” design patterns
+          </p>
+          <p className="list-icon">
+            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            Open book management
+          </p>
+          <p>
+            It’s our philosophy that if we a) treat everyone well b) implement good processes and c) get the incentives right, the community and software will grow in a mutual reinforcing virtuous spiral.
+          </p>
+        </div>
+    </div>
+    <div className="spotlight-two-small">
+      <img src="spotlight-2.png" alt="version-logo" className="spotlight-one"/>
+    </div>
   </div>
   );
 }

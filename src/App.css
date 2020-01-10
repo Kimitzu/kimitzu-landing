@@ -152,6 +152,9 @@ p {
 .spotlight-one-small {
     display: none;
 }
+.spotlight-two-small {
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
     .links-row {
@@ -233,6 +236,12 @@ p {
     .spotlight-one-small {
         display: block;
         height: 40vh;
+        position: relative;
+        background-color: var(--main-color);
+    }
+    .spotlight-two-small {
+        display: block;
+        height: 50vh;
         position: relative;
         background-color: var(--main-color);
     }
