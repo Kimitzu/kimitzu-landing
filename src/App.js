@@ -80,31 +80,31 @@ function App() {
             The Kimitzu project also aspires to treat our users, developers, and other community members well at all times. For us, that means:
           </p>
           <p className="list-icon">
-            <img src="Privacy.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="Security.svg" alt="version-logo" className="list-icons-svg"/>
             Strong security
           </p>
           <p className="list-icon">
-            <img src="First.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="UI.svg" alt="version-logo" className="list-icons-svg"/>
             Beautiful UI
           </p>
           <p className="list-icon">
-            <img src="Freedom.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="Githublist.svg" alt="version-logo" className="list-icons-svg"/>
             Open source license
           </p>
           <p className="list-icon">
-            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="Reward.svg" alt="version-logo" className="list-icons-svg"/>
             Meritocratic reward / governance structure
           </p>
           <p className="list-icon">
-            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="Decentralized.svg" alt="version-logo" className="list-icons-svg"/>
             Decentralized control
           </p>
           <p className="list-icon">
-            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="design.svg" alt="version-logo" className="list-icons-svg"/>
             No “dark” design patterns
           </p>
           <p className="list-icon">
-            <img src="Access.svg" alt="version-logo" className="list-icons-svg"/>
+            <img src="Open.svg" alt="version-logo" className="list-icons-svg"/>
             Open book management
           </p>
           <p>
@@ -114,6 +114,9 @@ function App() {
     </div>
     <div className="spotlight-two-small">
       <img src="spotlight-2.png" alt="version-logo" className="spotlight-one"/>
+    </div>
+    <div className="third-section-cont">
+      <h2 className="title-bold">How is Kimitzu related to OpenBazaar?</h2>
     </div>
   </div>
   );
