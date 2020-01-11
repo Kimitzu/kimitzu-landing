@@ -207,20 +207,11 @@ class App extends React.Component {
                 Openbazaar has an Android app. Kimitzu doesn't yet support the Android platform.
           </li>
             </ul>
-            <p>Explore the initial alpha release with us on the Testnet (v0.1.0-alpha)!</p>
-            <p>
-              Download the client for your operating system at <a className="text-underline" href="https://github.com/kimitzu/kimitzu-client/releases">https://github.com/kimitzu/kimitzu-client/releases.</a> Note that this is alpha software, so please expect bugs and other quirks. Also, by default, the app only operates on the OpenBazaar testnet at this time, so any store you create will only appear on the OpenBazaar testnet, and transactions won't use real money.
-        </p>
-            <p>
-              Or <a className="text-underline" href="https://test.kimitzu.ch/">play with our test instance</a>.
-        </p>
-            <p>
-              Report bugs, suggest, or contribute at <a className="text-underline" href="https://github.com/kimitzu/kimitzu-client/issues">https://github.com/kimitzu/kimitzu-client/issues</a>.
-        </p>
-            <p>
-              Join our community, head over to <a className="text-underline" href="https://reddit.com/r/kimitzu.">https://reddit.com/r/kimitzu</a>.
-        </p>
           </div>
+        </div>
+        <div className="footer">
+          <hr />
+          <p>© {new Date().getFullYear()} Kimitzu Foundation</p>
         </div>
       </div>
     );
