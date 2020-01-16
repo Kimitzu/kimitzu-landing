@@ -26,7 +26,7 @@ class App extends React.Component {
   }
 
   async getReleases() {
-    const Request = await Axios.get('http://localhost:3001/release/latest')
+    const Request = await Axios.get('https://updates.kimitzu.ch/release/latest')
     const RequestData = Request.data
     const ReleaseResource = RequestData.version
     console.log(ReleaseResource)
