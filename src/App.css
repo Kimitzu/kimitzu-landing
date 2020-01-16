@@ -22,7 +22,6 @@ ul {
 }
 
 .main-content-container {
-
 }
 
 .first-section-cont {
@@ -50,6 +49,7 @@ ul {
     color: var(--main-color);
     font-size: 1.2vw;
     padding-top: 2vw;
+    padding-bottom: 5vh;
 }
 .main-logo {
     height: 38vmin;
@@ -300,4 +300,8 @@ ul {
         margin-bottom: 4vw;
     }
 }
-  
+.footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    text-align: center;
+}
