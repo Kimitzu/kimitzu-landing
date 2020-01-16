@@ -1,4 +1,5 @@
 import React from "react";
+import Axios from "axios"
 import "./App.css";
 
 class App extends React.Component {
@@ -25,20 +26,14 @@ class App extends React.Component {
   }
 
   async getReleases() {
-    // const windowsRequest = await Axios.get(this.generateReleaseUrl('latest.yml'))
-    // const windowsRequestData = windowsRequest.data
-    // const windowsReleaseResource = windowsRequestData.split('\n')[2].split(':').trim()
-    const windowsRelease = this.generateReleaseUrl('kimitzu-client-setup-0.3.3-beta.exe')
+    const Request = await Axios.get('http://localhost:3001/release/latest')
+    const RequestData = Request.data
+    const ReleaseResource = RequestData.version
+    console.log(ReleaseResource)
 
-    // const linuxRequest = await Axios.get(this.generateReleaseUrl('latest-linux.yml'))
-    // const linuxRequestData = linuxRequest.data
-    // const linuxReleaseResource = linuxRequestData.split('\n')[2].split(':').trim()
-    const linuxRelease = this.generateReleaseUrl('Kimitzu-Client-0.3.3-beta.AppImage')
-
-    // const macRequest = await Axios.get(this.generateReleaseUrl('latest-mac.yml'))
-    // const macRequestData = macRequest.data
-    // const macReleaseResource = macRequestData.split('\n')[2].split(':').trim()
-    const macRelease = this.generateReleaseUrl('Kimitzu-Client-0.3.3-beta.dmg')
+    const windowsRelease = this.generateReleaseUrl(`kimitzu-client-setup-${ReleaseResource}.exe`)
+    const linuxRelease = this.generateReleaseUrl(`Kimitzu-Client-${ReleaseResource}.AppImage`)
+    const macRelease = this.generateReleaseUrl(`Kimitzu-Client-${ReleaseResource}.dmg`)
 
     return {
       windowsRelease, linuxRelease, macRelease
@@ -47,7 +42,6 @@ class App extends React.Component {
 
   render() {
     const { releases } = this.state
-
     return (
       <div className="main-content-container">
         <div className="first-section-cont">
